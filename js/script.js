@@ -10,7 +10,7 @@ AOS.init({
 // post gallery
 
         $('.post_gallery').owlCarousel({
-            loop:true,
+            loop:false,
             margin:1,
             nav:true,
             dots: false,
