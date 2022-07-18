@@ -7,6 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
+  overflow-x: visible !important
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -175,9 +176,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /* .imsec{
   padding: 2200px 0;
 } */
-.section {
-  padding: 150px 0;
-}
+/* .section {
+  padding: 50px 0;
+} */
 
 .section-title {
   margin-bottom: 70px;
@@ -459,12 +460,12 @@ a:hover, a:focus {
   height: 100%;
 }
 
-.portfolio-item:hover .portoflio-item-overlay {
+.portfolio-item:hover {
   opacity: 1;
   top: 40%;
 }
 
- .owl-carousel .owl-item .portfolio-item img {
+.owl-carousel .owl-item .portfolio-item img {
   -webkit-transform-style: none;
   
 } 
@@ -659,7 +660,7 @@ align-self: right;
 justify-content: space-between;
 }
 .portfolio-items {
-  width: 50%;
+  width:100%;
   padding: 5px;
   position: relative;
   
@@ -681,18 +682,24 @@ opacity: 1;
 .thumb-image :hover {
   opacity: 0%;
 }
+.thumb-part img{
+  width: 100%;
+}
 .port-butns{
   
   display: flex;
   justify-content: space-between;
   opacity: 0;
   position: absolute;
-  top: 30%;
+  top: 27%;
   left: 25%;
+  /* top: auto; */
 }
 .port-butns button p{
-font-size: x-large;
+font-size: large;
 color: #ffffff;
+padding: 0%;
+margin: 0%;
 }
 
 .portfolio-button {
@@ -700,7 +707,7 @@ color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-right: 10px;
-  padding: 10px 20px 0 20px !important;
+  padding: 5px 10px 5px 10px !important;
 }
 .portfolio-items:hover .thumb-part{
 background-color: #f77a1a;
@@ -723,11 +730,12 @@ background-color: #f77a1a;
 }
 
 #about{
-  padding-top: 20%;
+  padding-top: 12%;
 }
 #portfolio{
-  padding-top: 5%;
+  padding-top: 12%;
 }
+
 .imsec{
   padding-top: 10%;
 }
@@ -750,9 +758,32 @@ background-color: #f77a1a;
   margin: 0%;
   
 }
+.gr-text{
+  color: #fff;
+}
+.graphic{
+  margin-bottom: 10%;
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  
+}
+.gra{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+.gra-btn{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+#contact{
+margin-bottom: 15%;
+}
 
 /*=== MEDIA QUERY ===*/
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .navbar-toggler {
     background: #fff !important;
   }
@@ -767,6 +798,16 @@ background-color: #f77a1a;
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+    .port-butns {
+  
+      display: flex;
+      justify-content: space-between;
+      opacity: 0;
+      position: absolute;
+      top: 40%;
+      left: 35%;
+      /* top: auto; */
+    }
 }
 
 @media (max-width: 480px) {
@@ -807,6 +848,16 @@ background-color: #f77a1a;
   }
   .slider-img:before {
     right: -6px;
+  }
+  .port-butns {
+
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    /* top: auto; */
   }
 }
 
